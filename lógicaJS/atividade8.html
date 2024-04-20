@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE8</title>
+</head>
+<body>
+    <script>
+        /* Escreva um programa para ler o número de gols marcados pelo Corinthians e o número de gols
+marcados pelo Palmeiras em um final da Libertadores. Exibir o nome do vencedor. Caso não haja
+vencedor deverá ser exibida a palavra EMPATE? */
+
+ // Solicitar ao usuário o número de gols marcados pelo Corinthians e pelo Palmeiras
+var golsCorinthians = prompt("Quantos gols o Corinthians marcou?");
+var golsPalmeiras = prompt("Quantos gols o Palmeiras marcou?");
+// Converter as entradas do usuário para números inteiros
+golsCorinthians = parseInt(golsCorinthians);
+golsPalmeiras = parseInt(golsPalmeiras);
+// Verificar quem venceu ou se houve empate
+var vencedor;
+if (golsCorinthians > golsPalmeiras) {
+vencedor = "Corinthians";
+} else if (golsPalmeiras > golsCorinthians) {
+vencedor = "Palmeiras";
+} else {
+vencedor = "Empate";
+}
+// Exibir o nome do vencedor ou se houve empate
+console.log("O vencedor é: " + vencedor);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE10</title>
+</head>
+<body>
+    <script>
+        /* Escreva um programa para ler o número de lados de um polígono regular e a medida do lado (em
+cm).
+Calcular e exibir o seguinte: Se o número de lados for igual a 3 escrever TRIÂNGULO e o valor do
+seu perímetro. Se o número de lados for igual a 4 escrever QUADRADO e o valor da sua área. Se
+o número de lados for igual a 5 escrever PENTÁGONO. Observação: Considere que o usuário só
+informará os valores 3, 4 ou 5. Caso o número de lados seja inferior a 3 escrever NÃO É UM
+POLÍGONO. Caso o número de lados seja superior a 5 escrever POLÍGONO NÃO IDENTIFICADO? */
+
+ // Solicitar ao usuário o número de lados do polígono e a medida do lado
+var numeroDeLados = parseInt(prompt("Digite o número de lados do polígono (3, 4 ou 5):"));
+var medidaDoLado = parseFloat(prompt("Digite a medida do lado do polígono (em cm):"));
+// Verificar o tipo de polígono e calcular o resultado correspondente
+var resultado;
+switch (numeroDeLados) {
+case 3:
+resultado = "TRIÂNGULO. Perímetro: " + (medidaDoLado * 3) + " cm";
+break;
+case 4:
+resultado = "QUADRADO. Área: " + (medidaDoLado * medidaDoLado) + " cm²";
+break;
+case 5:
+resultado = "PENTÁGONO";
+break;
+default:
+if (numeroDeLados < 3) {
+resultado = "NÃO É UM POLÍGONO";
+} else if (numeroDeLados > 5) {
+resultado = "POLÍGONO NÃO IDENTIFICADO";
+}
+}
+// Exibir o resultado
+console.log(resultado);
+
+    </script>
+</body>
+</html>

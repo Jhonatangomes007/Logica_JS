@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade7</title>
+</head>
+<body>
+    <script>
+        /* As maçãs custam R$ 3,50 cada se forem compradas menos do que uma dúzia, e R$ 2,50 se
+forem compradas pelo menos doze. Escreva um programa que leia o número de maçãs
+compradas (considere que o usuário informará a quantidade), calcule e escreva o valor total da
+compra? */
+
+ // Solicitar ao usuário o número de maçãs compradas
+var quantidadeDeMacas = prompt("Quantas maçãs você comprou?");
+// Converter a entrada do usuário para um número inteiro
+quantidadeDeMacas = parseInt(quantidadeDeMacas);
+// Calcular o preço total
+var precoPorMaca;
+if (quantidadeDeMacas < 12) {
+precoPorMaca = 3.50;
+} else {
+precoPorMaca = 2.50;
+}
+var precoTotal = quantidadeDeMacas * precoPorMaca;
+// Exibir o preço total da compra
+console.log("O preço total da compra é: R$" + precoTotal.toFixed(2));
+
+    </script>
+</body>
+</html>
